@@ -1,6 +1,8 @@
 # 杨子敬 Zane Yang · 个人网站
 
-**公开网站：[https://zijingy942-glitch.github.io/](https://zijingy942-glitch.github.io/)**
+**中文版：[https://zijingy942-glitch.github.io/](https://zijingy942-glitch.github.io/)**
+
+**English version: [https://zijingy942-glitch.github.io/en.html](https://zijingy942-glitch.github.io/en.html)**
 
 **实习与科研项目详情：[进入项目详情](https://zijingy942-glitch.github.io/#work-detail)**
 
@@ -17,7 +19,9 @@
 
 ## 网站代码
 
-- `index.html`：HTML、样式和交互脚本，单文件静态网站。
+- `index.html`：中文页面，包含样式和交互脚本。
+- `en.html`：完整英文页面，可通过页首语言按钮切换并保留当前项目。
+- `assets/profile.png`：用户提供的头像原图。
 - `.nojekyll`：保持静态文件直接发布。
 
 ## 发布方式

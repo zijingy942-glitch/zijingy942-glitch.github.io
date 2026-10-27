@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zane Yang | Finance &amp; Investment Research Portfolio</title>
+<meta content="Zane Yang’s portfolio: Huaan Securities research internship, crypto venture capital research, on-chain data, business cases and financial modeling." name="description"/>
+<style>
+:root{--navy:#0d2433;--navy2:#17384a;--green:#345f4a;--deep:#244637;--paper:#f8f5ec;--soft:#eef2ed;--muted:#66736c;--line:rgba(36,70,55,.18);--gold:#c4a15b;--sage:#9fb6a2;--shadow:0 22px 56px rgba(13,36,51,.13)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"PingFang SC","Microsoft YaHei",Arial,sans-serif;background:var(--paper);color:#14251f;line-height:1.65}a{text-decoration:none;color:inherit}.header{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:16px clamp(18px,5vw,72px);background:rgba(13,36,51,.92);color:#fff;backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(255,255,255,.08)}.brand{display:flex;align-items:center;gap:12px;font-weight:900}.brand span{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--green)}.nav{display:flex;flex-wrap:wrap;gap:16px;color:rgba(255,255,255,.78);font-size:.94rem}.nav a:hover{color:#fff}.hero{min-height:82vh;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(280px,.72fr);gap:54px;align-items:center;padding:88px clamp(20px,6vw,88px);color:white;background:radial-gradient(circle at 82% 18%,rgba(159,182,162,.25),transparent 34%),linear-gradient(135deg,#0b1f2d,#061018 62%,var(--deep))}.eyebrow{margin:0 0 10px;color:var(--gold);font-size:.78rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.hero h1{margin:0;font-size:clamp(3.2rem,8vw,6.8rem);line-height:.92}.hero p{max-width:720px;color:rgba(255,255,255,.78);font-size:1.08rem}.avatar{width:min(410px,78vw);aspect-ratio:1;border-radius:50%;border:10px solid rgba(255,255,255,.08);box-shadow:0 34px 80px rgba(0,0,0,.34);background:white;object-fit:cover}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:8px;border:1px solid rgba(255,255,255,.18);font-weight:850}.primary{background:var(--paper);color:var(--navy)}.secondary{background:rgba(255,255,255,.06);color:white}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:36px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.12)}.stats div{padding:16px;background:rgba(255,255,255,.06)}.stats strong{display:block;font-size:1.2rem}.stats span{color:rgba(255,255,255,.68);font-size:.86rem}.section{padding:78px clamp(20px,6vw,88px)}.band{background:var(--soft)}.heading{width:min(1120px,100%);margin:0 auto 30px;display:flex;align-items:end;justify-content:space-between;gap:24px}.heading h2{margin:0;color:var(--navy);font-size:clamp(2rem,4vw,3.2rem);line-height:1.05}.note{max-width:560px;margin:0;color:var(--muted)}.grid{width:min(1120px,100%);margin:0 auto;display:grid;gap:20px}.categories{grid-template-columns:repeat(5,minmax(0,1fr))}.intro,.skills{grid-template-columns:repeat(3,minmax(0,1fr))}.work{grid-template-columns:repeat(2,minmax(0,1fr))}.assignments{grid-template-columns:repeat(3,minmax(0,1fr))}.category,.card,.skill,.timeline article{border:1px solid var(--line);border-radius:8px;background:rgba(255,253,246,.88);box-shadow:0 16px 38px rgba(13,36,51,.08)}.category{padding:22px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}.category:hover,.card:hover{transform:translateY(-4px)}.category b{color:var(--gold)}h3{color:var(--deep);margin:.55rem 0}.category p,.card p,.skill p,.timeline p{color:var(--muted);margin:.35rem 0 0}.skill{padding:24px}.timeline{gap:14px}.timeline article{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:22px}.timeline time{font-weight:900;color:var(--deep)}.card{overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}.clickable{cursor:pointer}.clickable:hover{border-color:rgba(196,161,91,.5);box-shadow:0 24px 56px rgba(13,36,51,.14)}.clickable:focus-visible{outline:3px solid rgba(196,161,91,.9);outline-offset:3px}.body{padding:24px}.kicker{color:var(--deep)!important;font-size:.76rem;font-weight:900;text-transform:uppercase}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.tags span{display:inline-flex;align-items:center;min-height:28px;padding:0 9px;border-radius:999px;background:rgba(159,182,162,.22);color:var(--deep);font-size:.78rem;font-weight:800}.open-hint{display:inline-flex;margin-top:14px;color:var(--gold);font-size:.86rem;font-weight:900}.mock{height:260px;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#102b38,#173f32)}.mock:before{content:"";position:absolute;inset:28px;border:1px solid rgba(255,255,255,.18);border-radius:8px}.mock:after{content:"";position:absolute;right:-42px;top:-58px;width:230px;height:230px;border-radius:50%;background:radial-gradient(circle,rgba(196,220,195,.7),rgba(196,220,195,.05) 68%)}.paper-card{position:absolute;left:10%;top:16%;width:48%;height:68%;border-radius:6px;background:#fdfbf4;box-shadow:0 18px 42px rgba(0,0,0,.24);padding:20px}.paper-card i,.paper-card b{display:block;height:8px;border-radius:99px;background:#d7dfd2;margin-bottom:10px}.paper-card b{width:42%;height:12px;background:#345f4a}.paper-card i:nth-child(2){width:88%}.paper-card i:nth-child(3){width:72%}.paper-card i:nth-child(4){width:92%}.paper-card i:nth-child(5){width:60%}.chart{position:absolute;left:11%;bottom:18%;display:flex;align-items:end;gap:12px;width:50%;height:46%}.chart i{display:block;flex:1;border-radius:6px 6px 0 0;background:linear-gradient(#c4a15b,#9fb6a2)}.chart i:nth-child(1){height:42%}.chart i:nth-child(2){height:72%}.chart i:nth-child(3){height:55%}.chart i:nth-child(4){height:88%}.chart i:nth-child(5){height:64%}.flow{position:absolute;left:9%;top:22%;width:56%;height:54%}.flow i{position:absolute;width:110px;height:46px;border-radius:8px;background:#fdfbf4;box-shadow:0 12px 28px rgba(0,0,0,.18)}.flow i:nth-child(1){left:0;top:0}.flow i:nth-child(2){left:150px;top:62px}.flow i:nth-child(3){left:300px;top:0}.flow i:after{content:"";position:absolute;left:20px;right:20px;top:19px;height:8px;border-radius:99px;background:#9fb6a2}.badge{position:absolute;left:26px;bottom:22px;color:white;font-weight:900;font-size:1.18rem;letter-spacing:.02em}.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.filter{min-height:36px;padding:0 13px;border:1px solid rgba(52,95,74,.24);border-radius:8px;background:rgba(255,253,246,.74);color:var(--deep);font-weight:850;cursor:pointer}.filter.active{background:var(--green);color:white}.assignment-card{padding:22px}.hidden{display:none}.detail-section{background:linear-gradient(180deg,var(--paper),#eef2ed)}.detail-shell{width:min(1120px,100%);margin:0 auto;display:grid;grid-template-columns:minmax(260px,.78fr) minmax(0,1.22fr);border:1px solid rgba(36,70,55,.18);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);background:#fffdf7}.detail-cover{min-height:430px;padding:34px;display:flex;flex-direction:column;justify-content:space-between;color:white;background:radial-gradient(circle at 82% 18%,rgba(196,220,195,.3),transparent 32%),linear-gradient(135deg,var(--navy),var(--deep))}.detail-cover small{color:var(--gold);font-weight:900;letter-spacing:.06em;text-transform:uppercase}.detail-cover h3{margin:18px 0;color:white;font-size:clamp(2rem,4vw,3.4rem);line-height:1}.detail-mark{font-size:5.8rem;font-weight:950;line-height:.9;color:rgba(255,255,255,.18)}.detail-body{padding:34px}.detail-label{margin:0 0 10px;color:var(--gold);font-size:.78rem;font-weight:900;text-transform:uppercase}.detail-body h4{margin:0 0 16px;color:var(--deep);font-size:1.6rem}.detail-body p{color:var(--muted);font-size:1.04rem}.detail-notice{margin-top:24px;padding:18px;border:1px solid rgba(196,161,91,.35);border-radius:8px;background:rgba(196,161,91,.09);color:#43544c}.detail-notice strong{display:block;color:var(--deep);margin-bottom:8px}.contact-line{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}.contact-line a{display:inline-flex;align-items:center;min-height:34px;padding:0 11px;border-radius:8px;background:rgba(52,95,74,.1);color:var(--deep);font-weight:850}.metrics{grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;border:1px solid var(--line);background:rgba(52,95,74,.18);margin-top:22px}.metrics div{padding:18px 20px;background:rgba(248,245,236,.85)}.metrics strong{display:block;color:var(--deep);font-size:1.35rem}.footer{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:58px clamp(20px,6vw,88px);background:var(--navy);color:white}.footer p{color:rgba(255,255,255,.72);max-width:680px}.links{display:grid;gap:10px}.links a{border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:10px 14px;background:rgba(255,255,255,.06)}@media(max-width:900px){.header{align-items:flex-start;flex-direction:column}.hero,.categories,.intro,.work,.assignments,.skills,.metrics,.footer,.detail-shell{grid-template-columns:1fr}.avatar{order:-1}.heading{align-items:start;flex-direction:column}.filters{justify-content:flex-start}.timeline article{grid-template-columns:1fr}.mock{height:230px}.detail-cover{min-height:270px}}@media(max-width:560px){.section,.hero,.footer{padding-left:18px;padding-right:18px}.hero h1{font-size:3rem}.actions{flex-direction:column}.btn{width:100%}.body,.detail-body,.detail-cover{padding:20px}.mock{height:210px}}
+
+/* Experience and research summaries follow the existing navy/green palette. */
+.timeline time small{display:block;margin-top:4px;color:var(--muted);font-size:.76rem;font-weight:500}
+.experience-links{display:flex;flex-wrap:wrap;gap:18px}
+.experience-link{display:inline-flex;align-items:center;gap:9px;margin-top:13px;padding:0;border:0;border-bottom:1px solid rgba(52,95,74,.3);background:none;color:var(--deep);font:inherit;font-size:.88rem;font-weight:800;cursor:pointer;text-align:left}
+.experience-link:hover{color:var(--navy)}
+.experience-link:focus-visible,.detail-tab:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.research-path{position:absolute;inset:30px 16% 60px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;color:var(--paper);font-weight:750}
+.research-path span{width:100%;padding:7px 10px;text-align:center;background:rgba(248,245,236,.1);border:1px solid rgba(159,182,162,.35);border-radius:6px}
+.research-path i{font-style:normal;color:var(--gold);line-height:1}
+.data-layers{position:absolute;inset:34px 12% 64px;display:grid;gap:10px}
+.data-layers span{display:flex;align-items:center;gap:18px;padding:7px 12px;border:1px solid rgba(159,182,162,.3);border-radius:6px;background:rgba(248,245,236,.08);color:var(--paper);font-size:.86rem}
+.data-layers b{min-width:75px;color:var(--gold);font-size:.72rem;letter-spacing:.05em}
+.detail-nav{display:flex;flex-wrap:wrap;gap:10px;width:min(1120px,100%);margin:0 auto 20px}
+.detail-tab{min-height:42px;padding:9px 15px;border:1px solid rgba(52,95,74,.25);border-radius:8px;background:rgba(255,253,246,.8);color:var(--deep);font:inherit;font-size:.9rem;font-weight:750;cursor:pointer}
+.detail-tab[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:white}
+.detail-section{scroll-margin-top:110px}
+.detail-body{min-width:0}
+.detail-cover h3{overflow-wrap:anywhere;line-height:1.15}
+.detail-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:24px 0 12px}
+.detail-metrics div{padding:14px 10px;border:1px solid var(--line);border-radius:6px;background:var(--soft)}
+.detail-metrics strong{display:block;color:var(--deep);font-size:1.45rem;line-height:1.3}
+.detail-metrics span{display:block;margin-top:6px;color:var(--muted);font-size:.76rem}
+.detail-body .detail-context{font-size:.84rem;color:var(--muted);line-height:1.7}
+.detail-sections{display:grid;gap:18px;margin-top:24px}
+.detail-sections section{padding-top:17px;border-top:1px solid var(--line)}
+.detail-sections h5{margin:0 0 6px;color:var(--deep);font-size:1rem}
+.detail-sections p{margin:0;font-size:.93rem;line-height:1.85}
+.detail-metrics[hidden],.detail-context[hidden],.detail-sections[hidden]{display:none}
+@media(max-width:600px){.detail-cover{min-height:280px;padding:26px}.detail-body{padding:24px}.detail-tab{flex:1 1 100%;text-align:left}.detail-metrics{gap:6px}.detail-metrics div{padding:12px 7px}.detail-metrics strong{font-size:1.35rem}.detail-section{scroll-margin-top:140px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.category{transition:none}}
+
+/* Language navigation and the supplied portrait. */
+.header{display:grid;grid-template-columns:auto 1fr auto}
+.header .nav{justify-self:end}
+.language-switcher{display:flex;gap:3px;padding:3px;border:1px solid rgba(255,255,255,.22);border-radius:8px;white-space:nowrap}
+.language-switcher a{display:inline-flex;align-items:center;justify-content:center;min-width:42px;min-height:36px;padding:3px 9px;border-radius:5px;color:rgba(255,255,255,.8);font-size:.84rem;font-weight:750}
+.language-switcher a[aria-current="page"]{background:var(--green);color:white}
+.language-switcher a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.avatar{height:auto;max-width:100%;object-position:50% 40%}
+.stats div{min-width:0}
+.stats strong,.stats span{overflow-wrap:anywhere}
+main>section[id]{scroll-margin-top:calc(var(--header-height,100px) + 16px)}
+html[lang="en"] .detail-cover h3{font-size:clamp(1.8rem,3vw,2.8rem)}
+@media(max-width:900px){.header{grid-template-columns:1fr auto;gap:12px}.header .brand{grid-column:1;grid-row:1}.language-switcher{grid-column:2;grid-row:1}.header .nav{grid-column:1/-1;grid-row:2;justify-self:start;gap:12px;font-size:.87rem}}
+@media(max-width:560px){.header{padding:12px 18px}.language-switcher a{min-height:34px;min-width:38px}.hero{padding-top:50px;gap:34px}}
+</style>
+<link href="https://zijingy942-glitch.github.io/" hreflang="zh-CN" rel="alternate"/><link href="https://zijingy942-glitch.github.io/en.html" hreflang="en" rel="alternate"/><link href="https://zijingy942-glitch.github.io/" hreflang="x-default" rel="alternate"/><link href="https://zijingy942-glitch.github.io/en.html" rel="canonical"/></head>
+<body>
+<header class="header"><a class="brand" href="#top"><span>ZY</span><strong>Zane Yang</strong></a><nav class="nav"><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#assignments">Coursework</a><a href="#work-detail">Details</a><a href="#contact">Contact</a></nav><nav aria-label="Language selection" class="language-switcher"><a data-lang="zh" data-language-link="./" href="./" hreflang="zh-CN" lang="zh-CN">中文</a><a aria-current="page" data-lang="en" data-language-link="en.html" href="en.html" hreflang="en" lang="en">EN</a></nav></header>
+<main id="top">
+<section class="hero"><div><p class="eyebrow">Finance · Investment Research · Data Analytics</p><h1>Zane<br/>Yang</h1><p>Finance undergraduate at Xiamen University, focused on company fundamentals, industry research and data modeling. My experience includes semiconductor and nonferrous-metals research at Huaan Securities, alongside crypto VC literature research and on-chain data construction.</p><div class="actions"><a class="btn primary" href="#work">Explore work</a><a class="btn secondary" href="#assignments">Coursework portfolio</a><a class="btn secondary" href="mailto:3296294528@qq.com">Get in touch</a></div><div class="stats"><div><strong>3.75 / 4.0</strong><span>Finance CGPA</span></div><div><strong>Dean's List</strong><span>Consecutive selections</span></div><div><strong>18</strong><span>Coursework</span></div><div><strong>6,910</strong><span>ML observations</span></div></div></div><img alt="Portrait of Zane Yang" class="avatar" decoding="async" fetchpriority="high" height="1411" src="assets/profile.png" width="1114"/></section>
+<section class="section band"><div class="heading"><div><p class="eyebrow">Work Categories</p><h2>Work categories</h2></div></div><div class="grid categories"><a class="category" href="#work"><b>01</b><h3>Research projects</h3><p>Research-assistant projects, industry frameworks, company analysis and investment research.</p></a><a class="category" href="#work"><b>02</b><h3>Business cases</h3><p>Business competitions, MCM/ICM, KCC, Brandstorm and industry research.</p></a><a class="category" href="#work"><b>03</b><h3>Data modeling</h3><p>System dynamics, linear programming, LightGBM, visualization and prediction.</p></a><a class="category" href="#assignments"><b>04</b><h3>Course projects</h3><p>Investment, banking, corporate finance and macroeconomic analysis.</p></a><a class="category" href="#assignments"><b>05</b><h3>Coursework portfolio</h3><p>18 coursework pieces spanning finance, economics, management, data, statistics and machine learning.</p></a></div></section>
+<section class="section" id="about"><div class="heading"><div><p class="eyebrow">Profile</p><h2>Connecting finance, industries and data</h2></div></div><div class="grid intro"><article class="skill"><h3>Research focus</h3><p>A foundation in finance applied to industry research, company fundamentals, financial statements, investment cases, market sizing, supply chains and competitors.</p></article><article class="skill"><h3>Data methods</h3><p>Working knowledge of Excel, Python, EViews and basic SQL for data preparation, statistical analysis, econometric models, visualization and research reporting.</p></article><article class="skill"><h3>Current direction</h3><p>Experience in DRAM and company analysis at a securities research institute, alongside crypto VC literature frameworks, post-investment on-chain behavior and research data.</p></article></div></section>
+<section class="section band" id="experience"><div class="heading"><div><p class="eyebrow">Experience</p><h2>Experience</h2></div></div><div class="grid timeline"><article>
+<time datetime="2026-07">2026.07 — 2026.10</time>
+<div><h3>Research Intern · Huaan Securities Research Institute</h3>
+<p>Contributed to ChangXin initial coverage, global DRAM supply-and-demand analysis and memory supply-chain research. Examined volume, pricing, costs, inventory write-down utilization, depreciation and minority interests, supporting forecasts and presentation materials, with additional nonferrous-metals research support.</p>
+<button class="experience-link" data-open-detail="huaan" type="button">Explore internship contributions <span aria-hidden="true">↗</span></button>
+</div>
+</article>
+<article>
+<time datetime="2026-02">Feb 2026 — Present<small>Research participation</small></time>
+<div><h3>Undergraduate Research Assistant · Xiamen University Malaysia</h3>
+<p>Contributed to crypto VC literature and comparative frameworks, post-investment on-chain behavior research and database construction. Work includes literature extraction, theory mapping, three-level variables, transaction and vesting data, and participation in tool design and module modifications.</p>
+<div class="experience-links"><button class="experience-link" data-open-detail="ra" type="button">Literature &amp; framework <span aria-hidden="true">↗</span></button><button class="experience-link" data-open-detail="crypto-data" type="button">On-chain behavior &amp; data <span aria-hidden="true">↗</span></button></div>
+</div>
+</article><article><time>2026.02 - 2026.04</time><div><h3>National Collegiate Business Elite Challenge · National Finalist</h3><p>Developed an iFLYTEK business case covering the company profile, operations, financial performance, SWOT, Porter’s Five Forces, strategy and earnings forecasts.</p></div></article><article><time>2026.01</time><div><h3>MCM / ICM · Honorable Mention</h3><p>Contributed to linear optimization and system-dynamics models of Gen-AI’s impact on employment and education, with an English paper, LaTeX typesetting and Python visualizations.</p></div></article><article><time>Sep 2024 — Present</time><div><h3>Xiamen University · Undergraduate in Finance</h3><p>CGPA 3.75/4.0, Distinction Award and consecutive Dean’s List selections. Coursework includes econometrics, investment, investment banking, corporate finance, commercial banking, Python machine learning, and data management &amp; AI.</p></div></article></div></section>
+<section class="section" id="work"><div class="heading"><div><p class="eyebrow">Selected Work</p><h2>Selected work</h2></div><p class="note">Select a project to explore its overview and contributions. Full reports are available on request.</p></div><div class="grid work"><article class="card clickable" data-detail="huaan" tabindex="0">
+<div aria-hidden="true" class="mock mock-huaan"><div class="research-path"><span>Industry supply &amp; demand</span><i>↓</i><span>Products · Capacity · Costs</span><i>↓</i><span>Earnings &amp; valuation</span></div><span class="badge">Equity Research</span></div>
+<div class="body"><p class="kicker">Huaan Securities · Research Internship</p><h3>Semiconductor Memory &amp; Company Research</h3><p>Initial-coverage support on ChangXin Technology, connecting DRAM supply and demand, operations, earnings quality, forecasting and valuation, with additional nonferrous-metals research support.</p><div class="tags"><span>DRAM</span><span>Financial analysis</span><span>Research communication</span></div><span class="open-hint">Explore work and contributions ↗</span></div>
+</article>
+<article class="card clickable" data-detail="ra" tabindex="0">
+<div aria-hidden="true" class="mock"><div class="paper-card"><b></b><i></i><i></i><i></i><i></i></div><span class="badge">Crypto VC · Literature</span></div>
+<div class="body"><p class="kicker">Research Project 01 · Literature &amp; Framework</p><h3>Crypto VC Investment Cycle: Literature &amp; Framework</h3><p>Organized mechanisms, theories and literature across pre-investment, investment and post-investment stages to support comparisons between traditional and crypto VC.</p><div class="tags"><span>25 subtopics</span><span>Theory mapping</span><span>Literature appraisal</span></div><span class="open-hint">Explore methods and contributions ↗</span></div>
+</article>
+<article class="card clickable" data-detail="crypto-data" tabindex="0">
+<div aria-hidden="true" class="mock mock-data"><div class="data-layers"><span><b>VC</b>Firm characteristics</span><span><b>PROJECT</b>Projects &amp; vesting</span><span><b>TRANSFER</b>On-chain behavior</span></div><span class="badge">Crypto VC · On-chain Data</span></div>
+<div class="body"><p class="kicker">Research Project 02 · Data &amp; Tools</p><h3>Crypto VC On-chain Behavior &amp; Research Database</h3><p>Contributed to three-level variable design, on-chain transfer and token-vesting data, and iterative improvements to research-tool modules.</p><div class="tags"><span>184 field rows</span><span>Source checks</span><span>Tool modules</span></div><span class="open-hint">Explore data work and study design ↗</span></div>
+</article><article class="card clickable" data-detail="iflytek" tabindex="0"><div class="mock"><div class="chart"><i></i><i></i><i></i><i></i><i></i></div><span class="badge">Business Case</span></div><div class="body"><p class="kicker">Business Case · National Finalist</p><h3>iFLYTEK Business Case &amp; Financial Forecasting</h3><p>Business planning, financial forecasting and strategic analysis.</p><div class="tags"><span>Financial Forecast</span><span>SWOT</span><span>Strategy</span></div><span class="open-hint">View project overview</span></div></article><article class="card clickable" data-detail="mcm" tabindex="0"><div class="mock"><div class="flow"><i></i><i></i><i></i></div><span class="badge">MCM Modeling</span></div><div class="body"><p class="kicker">MCM / ICM · Honorable Mention</p><h3>Gen-AI &amp; Employability Modeling</h3><p>System dynamics, linear programming and employment-impact modeling.</p><div class="tags"><span>System Dynamics</span><span>Linear Programming</span><span>Python</span></div><span class="open-hint">View project overview</span></div></article><article class="card clickable" data-detail="kitchen" tabindex="0"><div class="mock"><div class="paper-card"><b></b><i></i><i></i><i></i><i></i></div><span class="badge">Industry Research</span></div><div class="body"><p class="kicker">Industry Research · Top 10</p><h3>Smart Kitchen Equipment Industry Research</h3><p>Market sizing, supply-chain mapping and service-model research.</p><div class="tags"><span>Industry Map</span><span>Market Sizing</span><span>AI Agent</span></div><span class="open-hint">View project overview</span></div></article></div></section>
+<section class="section band" id="assignments"><div class="heading"><div><p class="eyebrow">Assignment Portfolio</p><h2>Coursework portfolio</h2></div><div><p class="note">18 coursework pieces organized by skill area. Select a card to read its overview.</p><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="finance">Finance</button><button class="filter" data-filter="economics">Economics</button><button class="filter" data-filter="data">Data &amp; AI</button><button class="filter" data-filter="management">Management</button><button class="filter" data-filter="banking">Banking &amp; trade</button><button class="filter" data-filter="stats">Statistics &amp; ML</button></div></div></div><div class="grid assignments">
+<article class="card assignment-card clickable" data-detail="ml-report" data-tags="data stats" tabindex="0"><p class="kicker">Machine Learning with Python · Report</p><h3>Game Sales Prediction &amp; Investment Decision Support</h3><p>LightGBM sales forecasting and investment recommendations.</p><div class="tags"><span>LightGBM</span><span>R² 0.6231</span><span>MAE 0.2315m</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="ml-notebook" data-tags="data stats" tabindex="0"><p class="kicker">Machine Learning with Python · Notebook</p><h3>Game Sales Prediction and Investment Tool</h3><p>An interactive, reproducible Python notebook workflow.</p><div class="tags"><span>Python</span><span>Notebook</span><span>Prediction</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="ml-presentation" data-tags="data stats" tabindex="0"><p class="kicker">Machine Learning with Python · Presentation</p><h3>Machine Learning Project Presentation</h3><p>Model workflow, findings and business interpretation.</p><div class="tags"><span>Presentation</span><span>Model Story</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="dmai-a2" data-tags="data" tabindex="0"><p class="kicker">Data Management &amp; AI · Assignment 2</p><h3>Titanic Data Preparation &amp; Machine Learning</h3><p>Data preparation and modeling with pandas and scikit-learn.</p><div class="tags"><span>pandas</span><span>sklearn</span><span>KMeans</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="dmai-a1" data-tags="data" tabindex="0"><p class="kicker">Data Management &amp; AI · Assignment 1</p><h3>Python Fundamentals &amp; NumPy Exercises</h3><p>Python fundamentals and array operations.</p><div class="tags"><span>Python Basics</span><span>NumPy</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="statistics" data-tags="stats" tabindex="0"><p class="kicker">Statistics for Business</p><h3>Student Part-time Work &amp; Attendance: Survey Design</h3><p>Survey design and a framework for correlation analysis.</p><div class="tags"><span>Survey</span><span>Correlation</span><span>Attendance</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="pof" data-tags="finance" tabindex="0"><p class="kicker">Principles of Finance</p><h3>Equity Risk, CAPM &amp; Valuation</h3><p>Financial theory, risk measures and valuation.</p><div class="tags"><span>CAPM</span><span>DDM</span><span>Valuation</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="banking" data-tags="finance banking" tabindex="0"><p class="kicker">Commercial Banking</p><h3>ICBC Performance &amp; Basel Analysis</h3><p>Annual-report analysis and Basel-related indicators.</p><div class="tags"><span>Banking</span><span>Basel</span><span>Ratios</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="micro" data-tags="economics finance" tabindex="0"><p class="kicker">Microeconomics</p><h3>A Microeconomic Analysis of Malaysian Property</h3><p>Supply, demand, elasticity and property-market analysis.</p><div class="tags"><span>Demand &amp; Supply</span><span>Elasticity</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="macro" data-tags="economics finance" tabindex="0"><p class="kicker">Macroeconomics</p><h3>China–US Debt Risk &amp; Ownership Structure</h3><p>Debt composition, risk indicators and policy recommendations.</p><div class="tags"><span>Debt Risk</span><span>Policy</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="ie-report" data-tags="economics banking" tabindex="0"><p class="kicker">International Economics · Report</p><h3>The China–US Trade War and North Korean Trade</h3><p>Trade policy, FDI, supply-chain relocation and SDG 17.</p><div class="tags"><span>Trade War</span><span>FDI</span><span>SDG 17</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="ie-presentation" data-tags="economics banking" tabindex="0"><p class="kicker">International Economics · Presentation</p><h3>Trade War &amp; Global Value Chains: Presentation</h3><p>Trade theory and global value chains.</p><div class="tags"><span>Presentation</span><span>GVC</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="pom-case" data-tags="management" tabindex="0"><p class="kicker">Principle of Management · Assessment 2</p><h3>Leadership &amp; Governance Risks: The Transmile Case</h3><p>Leadership styles and corporate governance.</p><div class="tags"><span>Leadership</span><span>Governance</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="pom-week2" data-tags="management" tabindex="0"><p class="kicker">Principle of Management · Week 2</p><h3>Approaches to Managerial Decision-making</h3><p>Rational, boundedly rational and intuitive decisions.</p><div class="tags"><span>Decision Making</span><span>Team 6</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="pom-week5" data-tags="management" tabindex="0"><p class="kicker">Principle of Management · Week 5</p><h3>Managing Change and Innovation</h3><p>Organizational change and innovation management.</p><div class="tags"><span>Change</span><span>Innovation</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="pom-week8" data-tags="management" tabindex="0"><p class="kicker">Principle of Management · Week 8</p><h3>Human Resources Management &amp; Diversity</h3><p>HR management, diversity and employee support.</p><div class="tags"><span>HRM</span><span>Diversity</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="pom-week11" data-tags="management" tabindex="0"><p class="kicker">Principle of Management · Week 11</p><h3>Motivating and Rewarding Employees</h3><p>Employee motivation, rewards and behavior.</p><div class="tags"><span>Motivation</span><span>Rewards</span></div><span class="open-hint">View project overview</span></article>
+<article class="card assignment-card clickable" data-detail="pom-week14" data-tags="management" tabindex="0"><p class="kicker">Principle of Management · Week 14</p><h3>Management Control &amp; Performance Feedback</h3><p>Implementation, control systems and performance feedback.</p><div class="tags"><span>Control</span><span>Feedback</span></div><span class="open-hint">View project overview</span></article>
+</div><div class="grid metrics"><div><strong>18</strong><span>Coursework pieces</span></div><div><strong>6</strong><span>Skill categories</span></div><div><strong>6,910</strong><span>ML observations</span></div><div><strong>75</strong><span>Banking report pages</span></div></div></section>
+<section class="section detail-section" id="work-detail"><div class="heading"><div><p class="eyebrow">Cover Detail</p><h2>Project &amp; work details</h2></div><p class="note">Explore internship and research contributions, methods and project overviews. Contact me for full materials.</p></div><div aria-label="Internship and research project selection" class="detail-nav">
+<button aria-controls="work-detail" class="detail-tab" data-open-detail="huaan" type="button">Huaan research internship</button>
+<button aria-controls="work-detail" class="detail-tab" data-open-detail="ra" type="button">Research 01 · Literature</button>
+<button aria-controls="work-detail" class="detail-tab" data-open-detail="crypto-data" type="button">Research 02 · On-chain data</button>
+</div>
+<div class="detail-shell"><div class="detail-cover"><div><small id="detail-kicker">Select a work</small><h3 id="detail-title" tabindex="-1">Semiconductor Memory &amp; Company Research</h3></div><div class="detail-mark" id="detail-mark">ZY</div></div><div class="detail-body"><p class="detail-label" id="detail-type">Intro / Abstract</p><h4 id="detail-subtitle">Project overview</h4><p id="detail-abstract">Select a project or coursework card to read its introduction or abstract.</p><div class="detail-metrics" hidden="" id="detail-metrics"></div><p class="detail-context" hidden="" id="detail-context"></p><div class="detail-sections" hidden="" id="detail-sections"></div><div class="tags" id="detail-tags"><span>Portfolio</span><span>Cover Only</span></div><div class="detail-notice"><strong>Contact Zane Yang for full materials</strong><span>Full reports, research code, datasets and attachments are available on request.</span><div class="contact-line"><a href="mailto:3296294528@qq.com">3296294528@qq.com</a><a href="tel:+60142147782">+60 142147782</a></div></div></div></div></section>
+<section class="section" id="skills"><div class="heading"><div><p class="eyebrow">Capabilities</p><h2>Skills &amp; coursework</h2></div></div><div class="grid skills"><article class="skill"><h3>Research &amp; finance</h3><p>Industry and company research, financial statements, investment cases, market sizing, supply chains, competitors, business planning and research reporting.</p></article><article class="skill"><h3>Data &amp; modeling</h3><p>Multi-source data preparation, Python analysis and visualization, Excel pivots and formulas, EViews econometrics, basic SQL, linear optimization and system dynamics.</p></article><article class="skill"><h3>Communication &amp; tools</h3><p>Word, PowerPoint, LaTeX and Cursor; English-language research and writing. IELTS 6.0; preparing for the GRE and CFA Level I.</p></article></div></section>
+</main><footer class="footer" id="contact"><div><p class="eyebrow">Contact</p><h2>Contact Zane Yang</h2><p>Email: <a href="mailto:3296294528@qq.com">3296294528@qq.com</a><br/>Phone: <a href="tel:+60142147782">+60 142147782</a></p></div><div class="links"><a href="mailto:3296294528@qq.com">Send an email</a><a href="tel:+60142147782">Call</a><a href="https://github.com/zijingy942-glitch">GitHub Profile</a><a href="#assignments">Explore coursework</a></div></footer>
+<script>
+const detailData={
+  "huaan": {
+    "kicker": "Huaan Securities · 2026.07—2026.10",
+    "title": "Semiconductor Memory & Company Research",
+    "type": "Project overview",
+    "subtitle": "Industry, business economics & research communication",
+    "mark": "HA",
+    "abstract": "During my internship at Huaan Securities Research Institute, I contributed to initial-coverage and company research on ChangXin Technology. Against the backdrop of global DRAM supply and demand, I organized information on products, technology, capacity, customers and financial performance, connecting business fundamentals with earnings forecasts, valuation and risks.",
+    "context": "My role centered on research support, source checks, model analysis and draft integration, with additional support for nonferrous-metals company research.",
+    "sections": [
+      {
+        "title": "Company and industry research",
+        "text": "Used prospectuses, periodic reports and domestic and international research to organize ChangXin’s products, technology, ownership, subsidiaries, fabs and customer adoption. Studied DRAM supply and demand, AI servers, HBM, inventory and pricing cycles, alongside equipment, materials and advanced packaging and testing."
+      },
+      {
+        "title": "Earnings quality and modeling support",
+        "text": "Examined volume, pricing, costs, depreciation and cash flow, with particular attention to inventory write-down utilization, minority interests and effective bit output. Contributed to broker-model analysis, forecast assumptions, scenarios and valuation sensitivities, linking capacity to attributable earnings."
+      },
+      {
+        "title": "Research drafts and presentation materials",
+        "text": "Helped integrate and revise company research, memory supply-chain materials, charts and presentation drafts, organizing industry views, operating assumptions, financial forecasts and risks into a clear research narrative."
+      },
+      {
+        "title": "Additional sector support",
+        "text": "Assisted with financial-report and model materials for China Northern Rare Earth, Tengyuan Cobalt and JL MAG, checking product classifications, production and sales volumes, and unit costs. Also organized materials from a mining company’s results presentation."
+      }
+    ],
+    "tags": [
+      "Company research",
+      "DRAM supply & demand",
+      "Earnings quality",
+      "Forecasting & valuation"
+    ]
+  },
+  "ra": {
+    "kicker": "Research Project 01 · Crypto Venture Capital",
+    "title": "Crypto VC Investment Cycle: Literature & Framework",
+    "type": "Research overview",
+    "subtitle": "From literature appraisal to an investment-cycle framework",
+    "mark": "RA",
+    "abstract": "Organized crypto venture capital research around pre-investment, investment and post-investment stages. The work examines financing, contracting, governance, monitoring and exit mechanisms, comparing traditional VC with investment shaped by tokens, DAOs and on-chain liquidity, and supporting literature-review and comparative-research materials.",
+    "metrics": [
+      {
+        "value": "25",
+        "label": "Framework subtopics"
+      },
+      {
+        "value": "10",
+        "label": "Theory mappings"
+      },
+      {
+        "value": "68",
+        "label": "Literature mapping records"
+      }
+    ],
+    "context": "Figures describe the categories and mappings in the existing expanded framework. My contribution includes literature organization, theory mapping and research writing support.",
+    "sections": [
+      {
+        "title": "Literature extraction and critical appraisal",
+        "text": "Contributed to literature searches and reading notes, extracting research questions, theories, data, methods, variables and findings. Compared stated limitations with potential research gaps and retained selected quotations, sections and page references to support updates."
+      },
+      {
+        "title": "Three-stage mechanisms and theory mapping",
+        "text": "Helped classify financing routes, institutional certification, disclosure credibility, token/equity arrangements, DAO governance, vesting and exits across the three stages. Connected these mechanisms to signaling, information asymmetry, networks, agency and contracting, and institutional theories."
+      },
+      {
+        "title": "Comparative framework and bilingual writing support",
+        "text": "Contributed to comparisons between traditional and crypto VC, helping organize and revise Chinese and English research drafts, literature matrices and Word, LaTeX and PDF materials. Current outputs are working frameworks and writing materials."
+      }
+    ],
+    "tags": [
+      "Literature research",
+      "Crypto VC",
+      "Theory framework",
+      "Research writing"
+    ]
+  },
+  "crypto-data": {
+    "kicker": "Research Project 02 · On-chain Behavior & Data",
+    "title": "Crypto VC On-chain Behavior & Research Database",
+    "type": "Research overview",
+    "subtitle": "Variable design, source checks & tool-module contributions",
+    "mark": "DATA",
+    "abstract": "Contributed to VC-, project- and transaction-level data construction to study observable behavior after crypto VCs receive portfolio-project tokens, including holding, transfers, staking and exchange-directed transfers. Combined RootData, Arkham, Etherscan, Tokenomist and project disclosures to prepare research variables, transaction records and vesting information.",
+    "metrics": [
+      {
+        "value": "184",
+        "label": "Data-dictionary field rows"
+      },
+      {
+        "value": "56,871",
+        "label": "Rows in team merged tables"
+      },
+      {
+        "value": "74",
+        "label": "Token vesting data tables"
+      }
+    ],
+    "context": "Dataset figures refer to the team’s working materials as of October 2026. My contribution includes variable design, data collection and checks, and participation in research-tool design and module modifications.",
+    "sections": [
+      {
+        "title": "Three-level variables and data dictionary",
+        "text": "Contributed to the inventory of VC-, project- and transaction-level variables. Organized a data dictionary with 29 information categories and 184 field rows, documenting definitions, types, collection difficulty and research uses, and assessing availability with Cyber as a case study."
+      },
+      {
+        "title": "On-chain transactions and multi-source records",
+        "text": "Contributed to collecting and checking institutional wallets, tokens, UTC timestamps, raw integer amounts, transfer direction and transaction identifiers. The team’s latest stored merged tables for 28 institution labels contain 56,871 rows for further linkage and behavior identification."
+      },
+      {
+        "title": "Vesting plans and measurement checks",
+        "text": "Organized token allocations, cliffs, linear release rules and monthly cumulative data, distinguishing source extracts, rule-derived figures and snapshots while retaining provenance and missing-data notes. Planned vesting, actual receipts, exchange transfers and sales are treated as separate events."
+      },
+      {
+        "title": "Tool modules and research-design support",
+        "text": "Participated in research-tool design and module modifications, translating data-processing and variable requirements into iterative improvements. Helped organize collection rules, candidate questions, data feasibility and identification limits in preparation for empirical analysis."
+      }
+    ],
+    "tags": [
+      "Research database",
+      "On-chain data",
+      "Token vesting",
+      "Tool-module iteration"
+    ]
+  },
+  "iflytek": {
+    "kicker": "Business Case · National Finalist",
+    "title": "iFLYTEK Business Case & Financial Forecasting",
+    "type": "Abstract",
+    "mark": "AI",
+    "abstract": "A business case on iFLYTEK covering the company profile, financial ratios, DuPont analysis, LNG-PESTEL, Porter’s Five Forces, SWOT, strategy implementation and 2025–2027 forecasts. The work connects financial evidence with operating performance and strategic judgment.",
+    "tags": [
+      "Business Case",
+      "Forecast",
+      "Strategy"
+    ]
+  },
+  "mcm": {
+    "kicker": "MCM / ICM · Honorable Mention",
+    "title": "Gen-AI & Employability Modeling",
+    "type": "Abstract",
+    "mark": "MCM",
+    "abstract": "This cover summarizes a modeling project on how Gen-AI reshapes employability and education supply. The work combines system dynamics, linear programming, and Python visualization to evaluate occupational impact and reskilling pressure.",
+    "tags": [
+      "Modeling",
+      "System Dynamics",
+      "Python"
+    ]
+  },
+  "kitchen": {
+    "kicker": "Industry Research · Top 10",
+    "title": "Smart Kitchen Equipment Industry Research",
+    "type": "Intro",
+    "mark": "IND",
+    "abstract": "Industry research on smart kitchen equipment, covering definitions, product functions, applications, service models, industry development and regional demand. It distinguishes household, commercial and public-kitchen use cases.",
+    "tags": [
+      "Industry Research",
+      "Market Sizing",
+      "AI Agent"
+    ]
+  },
+  "ml-report": {
+    "kicker": "Machine Learning with Python · Report",
+    "title": "Game Sales Prediction & Investment Decision Support",
+    "type": "Abstract",
+    "mark": "ML",
+    "abstract": "This cover presents a machine learning project based on 6,910 game samples from 1994-2025. It summarizes the workflow from EDA and feature engineering to LightGBM training, evaluation, and a four-level investment recommendation output.",
+    "tags": [
+      "LightGBM",
+      "Prediction",
+      "Investment Tool"
+    ]
+  },
+  "ml-notebook": {
+    "kicker": "Machine Learning with Python · Notebook",
+    "title": "Game Sales Prediction and Investment Tool",
+    "type": "Intro",
+    "mark": "NB",
+    "abstract": "This cover introduces an interactive Python notebook that reproduces the full analysis path: data cleaning, feature construction, model training, prediction output, and investment-level interpretation.",
+    "tags": [
+      "Python",
+      "Notebook",
+      "Reproducible"
+    ]
+  },
+  "ml-presentation": {
+    "kicker": "Machine Learning with Python · Presentation",
+    "title": "Machine Learning Project Presentation",
+    "type": "Intro",
+    "mark": "PRE",
+    "abstract": "A presentation of the machine learning project, explaining the data sources, model performance, prediction logic and business implications for project reporting and discussion.",
+    "tags": [
+      "Presentation",
+      "Model Story",
+      "Business Insight"
+    ]
+  },
+  "dmai-a2": {
+    "kicker": "Data Management & AI · Assignment 2",
+    "title": "Titanic Data Preparation & Machine Learning",
+    "type": "Abstract",
+    "mark": "AI",
+    "abstract": "A Titanic data analysis assignment covering cleaning with pandas and NumPy, missing-value treatment, encoding, standardization, random forests, logistic regression, confusion matrices, KMeans and regression evaluation.",
+    "tags": [
+      "pandas",
+      "sklearn",
+      "EDA"
+    ]
+  },
+  "dmai-a1": {
+    "kicker": "Data Management & AI · Assignment 1",
+    "title": "Python Fundamentals & NumPy Exercises",
+    "type": "Intro",
+    "mark": "PY",
+    "abstract": "Python fundamentals exercises covering variables, f-strings, lists, nested dictionaries, functions and NumPy arrays, providing a foundation for later data management and machine learning work.",
+    "tags": [
+      "Python Basics",
+      "NumPy",
+      "Functions"
+    ]
+  },
+  "statistics": {
+    "kicker": "Statistics for Business",
+    "title": "Student Part-time Work & Attendance: Survey Design",
+    "type": "Abstract",
+    "mark": "STAT",
+    "abstract": "A business statistics survey design examining attendance among students with and without part-time jobs, the relationship between working hours and attendance, attendance awareness, course interest and academic performance.",
+    "tags": [
+      "Survey",
+      "Statistics",
+      "Attendance"
+    ]
+  },
+  "pof": {
+    "kicker": "Principles of Finance",
+    "title": "Equity Risk, CAPM & Valuation",
+    "type": "Abstract",
+    "mark": "CAPM",
+    "abstract": "A finance assignment applying returns, correlation, standard deviation, CAPM, dividend discount models and cash-flow valuation to the analysis of equity risk and value.",
+    "tags": [
+      "CAPM",
+      "DDM",
+      "Valuation"
+    ]
+  },
+  "banking": {
+    "kicker": "Commercial Banking",
+    "title": "ICBC Performance & Basel Analysis",
+    "type": "Abstract",
+    "mark": "BANK",
+    "abstract": "A commercial banking report using ICBC’s 2020–2024 annual reports and industry materials to examine profitability, asset utilization, income structure, leverage efficiency and Basel-related indicators.",
+    "tags": [
+      "Banking",
+      "Basel",
+      "Financial Ratios"
+    ]
+  },
+  "micro": {
+    "kicker": "Microeconomics",
+    "title": "A Microeconomic Analysis of Malaysian Property",
+    "type": "Intro",
+    "mark": "MIC",
+    "abstract": "A microeconomics assignment built around a Malaysian property-market case with 23.8% year-on-year growth in sales and RM105 billion in transaction value. It examines supply and demand, price elasticity, policy and market equilibrium.",
+    "tags": [
+      "Demand & Supply",
+      "Elasticity",
+      "Property Market"
+    ]
+  },
+  "macro": {
+    "kicker": "Macroeconomics",
+    "title": "China–US Debt Risk & Ownership Structure",
+    "type": "Abstract",
+    "mark": "MAC",
+    "abstract": "A macroeconomics group report comparing China’s local-government debt challenges with US sovereign credit risk, including debt composition, ownership, maturity structure and policy responses.",
+    "tags": [
+      "Debt Risk",
+      "Macro Indicators",
+      "Policy"
+    ]
+  },
+  "ie-report": {
+    "kicker": "International Economics · Report",
+    "title": "The China–US Trade War and North Korean Trade",
+    "type": "Abstract",
+    "mark": "IE",
+    "abstract": "This cover summarizes a report on the impact of the China-US trade war on North Korean trade, covering policy tools, supply chain relocation, FDI, export competitiveness, policy uncertainty, and SDG 17 implications.",
+    "tags": [
+      "Trade War",
+      "FDI",
+      "SDG 17"
+    ]
+  },
+  "ie-presentation": {
+    "kicker": "International Economics · Presentation",
+    "title": "Trade War & Global Value Chains: Presentation",
+    "type": "Intro",
+    "mark": "GVC",
+    "abstract": "An international economics presentation translating comparative advantage, protectionism, global value chains and policy recommendations into a classroom presentation.",
+    "tags": [
+      "Presentation",
+      "Trade Theory",
+      "GVC"
+    ]
+  },
+  "pom-case": {
+    "kicker": "Principle of Management · Assessment 2",
+    "title": "Leadership & Governance Risks: The Transmile Case",
+    "type": "Abstract",
+    "mark": "CASE",
+    "abstract": "A management case analysis of Gan Boon Aun and Transmile, focusing on leadership style, weaknesses in control, limited transparency and accountability.",
+    "tags": [
+      "Leadership",
+      "Governance",
+      "Case Study"
+    ]
+  },
+  "pom-week2": {
+    "kicker": "Principle of Management · Week 2",
+    "title": "Approaches to Managerial Decision-making",
+    "type": "Intro",
+    "mark": "W2",
+    "abstract": "A management presentation comparing rational decision-making, bounded rationality and intuition, and explaining how managers make judgments under uncertainty.",
+    "tags": [
+      "Decision Making",
+      "Bounded Rationality",
+      "Team 6"
+    ]
+  },
+  "pom-week5": {
+    "kicker": "Principle of Management · Week 5",
+    "title": "Managing Change and Innovation",
+    "type": "Intro",
+    "mark": "W5",
+    "abstract": "This cover introduces a management presentation on change and innovation, using Satya Nadella and Microsoft’s cloud transformation as a case to discuss leadership in strategic change.",
+    "tags": [
+      "Change",
+      "Innovation",
+      "Microsoft Case"
+    ]
+  },
+  "pom-week8": {
+    "kicker": "Principle of Management · Week 8",
+    "title": "Human Resources Management & Diversity",
+    "type": "Intro",
+    "mark": "HR",
+    "abstract": "A presentation on human resources and diversity, covering training, performance bonuses, compensation and benefits, employee support and organizational inclusion.",
+    "tags": [
+      "HRM",
+      "Diversity",
+      "Rewards"
+    ]
+  },
+  "pom-week11": {
+    "kicker": "Principle of Management · Week 11",
+    "title": "Motivating and Rewarding Employees",
+    "type": "Intro",
+    "mark": "W11",
+    "abstract": "This cover introduces a management presentation on employee motivation and rewards, explaining energy, direction, persistence, reward systems, goal setting, and work design.",
+    "tags": [
+      "Motivation",
+      "Rewards",
+      "Employee Behavior"
+    ]
+  },
+  "pom-week14": {
+    "kicker": "Principle of Management · Week 14",
+    "title": "Management Control & Performance Feedback",
+    "type": "Intro",
+    "mark": "CTRL",
+    "abstract": "A management presentation on planning implementation, adaptation, control systems and performance feedback, including how managers obtain information for evaluating performance.",
+    "tags": [
+      "Control",
+      "Performance",
+      "Feedback"
+    ]
+  }
+};
+const buttons=[...document.querySelectorAll('.filter')];const cards=[...document.querySelectorAll('[data-tags]')];buttons.forEach(btn=>btn.addEventListener('click',()=>{const f=btn.dataset.filter;buttons.forEach(b=>b.classList.toggle('active',b===btn));cards.forEach(card=>{const tags=card.dataset.tags.split(' ');card.classList.toggle('hidden',f!=='all'&&!tags.includes(f));});}));
+const detailSection=document.querySelector('#work-detail');const detailKicker=document.querySelector('#detail-kicker');const detailTitle=document.querySelector('#detail-title');const detailType=document.querySelector('#detail-type');const detailSubtitle=document.querySelector('#detail-subtitle');const detailAbstract=document.querySelector('#detail-abstract');const detailTags=document.querySelector('#detail-tags');const detailMark=document.querySelector('#detail-mark');
+const detailMetrics=document.querySelector('#detail-metrics');
+const detailContext=document.querySelector('#detail-context');
+const detailSections=document.querySelector('#detail-sections');
+function openDetail(id,{scroll=true,updateUrl=true}={}){
+  const item=Object.hasOwn(detailData,id)?detailData[id]:null;
+  if(!item)return;
+  detailKicker.textContent=item.kicker;
+  detailTitle.textContent=item.title;
+  detailType.textContent=item.type;
+  detailSubtitle.textContent=item.subtitle||'Project overview';
+  detailAbstract.textContent=item.abstract;
+  detailMark.textContent=item.mark;
+  detailTags.replaceChildren(...item.tags.map(tag=>{const span=document.createElement('span');span.textContent=tag;return span;}));
+  detailMetrics.replaceChildren(...(item.metrics||[]).map(metric=>{
+    const box=document.createElement('div');
+    const value=document.createElement('strong');value.textContent=metric.value;
+    const label=document.createElement('span');label.textContent=metric.label;
+    box.append(value,label);return box;
+  }));
+  detailMetrics.hidden=!item.metrics?.length;
+  detailContext.textContent=item.context||'';
+  detailContext.hidden=!item.context;
+  detailSections.replaceChildren(...(item.sections||[]).map(section=>{
+    const block=document.createElement('section');
+    const title=document.createElement('h5');title.textContent=section.title;
+    const body=document.createElement('p');body.textContent=section.text;
+    block.append(title,body);return block;
+  }));
+  detailSections.hidden=!item.sections?.length;
+  document.querySelectorAll('[data-open-detail]').forEach(button=>{
+    if(button.classList.contains('detail-tab'))button.setAttribute('aria-pressed',String(button.dataset.openDetail===id));
+  });
+  if(updateUrl){const url=new URL(location.href);url.searchParams.set('project',id);url.hash='work-detail';history.replaceState(null,'',url);syncLanguageLinks();}
+  if(scroll){detailSection.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});detailTitle.focus({preventScroll:true});}
+}
+document.querySelectorAll('[data-detail]').forEach(card=>{
+  card.setAttribute('role','button');
+  card.setAttribute('aria-controls','work-detail');
+  card.setAttribute('aria-label','View '+card.querySelector('h3').textContent+' details');
+  card.addEventListener('click',()=>openDetail(card.dataset.detail));
+  card.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openDetail(card.dataset.detail);}});
+});
+document.querySelectorAll('[data-open-detail]').forEach(button=>button.addEventListener('click',()=>openDetail(button.dataset.openDetail)));
+function restoreDetail(){const requested=new URL(location.href).searchParams.get('project');openDetail(Object.hasOwn(detailData,requested)?requested:'huaan',{scroll:false,updateUrl:false});}
+
+function syncLanguageLinks(){
+  document.querySelectorAll('[data-language-link]').forEach(link=>{
+    const target=new URL(link.dataset.languageLink,location.href);
+    target.search=location.search;target.hash=location.hash;link.href=target.href;
+  });
+}
+syncLanguageLinks();
+window.addEventListener('hashchange',syncLanguageLinks);
+const siteHeader=document.querySelector('.header');
+const updateHeaderHeight=()=>document.documentElement.style.setProperty('--header-height',siteHeader.getBoundingClientRect().height+'px');
+updateHeaderHeight();
+new ResizeObserver(updateHeaderHeight).observe(siteHeader);
+
+restoreDetail();
+window.addEventListener('popstate',()=>{restoreDetail();syncLanguageLinks();});
+</script>
+</body>
+</html>
