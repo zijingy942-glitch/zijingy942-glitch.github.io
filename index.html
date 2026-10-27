@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>杨子敬 Zane Yang | 金融研究与数据分析作品集</title>
 <meta content="杨子敬 Zane Yang 的个人作品集，涵盖华安证券研究所实习、加密风险投资研究、链上数据、商赛与数据建模。" name="description"/>
 <style>
@@ -54,12 +54,117 @@ main>section[id]{scroll-margin-top:calc(var(--header-height,100px) + 16px)}
 html[lang="en"] .detail-cover h3{font-size:clamp(1.8rem,3vw,2.8rem)}
 @media(max-width:900px){.header{grid-template-columns:1fr auto;gap:12px}.header .brand{grid-column:1;grid-row:1}.language-switcher{grid-column:2;grid-row:1}.header .nav{grid-column:1/-1;grid-row:2;justify-self:start;gap:12px;font-size:.87rem}}
 @media(max-width:560px){.header{padding:12px 18px}.language-switcher a{min-height:34px;min-width:38px}.hero{padding-top:50px;gap:34px}}
+
+/* Shareable QR assets and a phone-specific reading layout. */
+.mobile-menu-toggle,.mobile-dock,.mobile-copy{display:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.share-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px}
+.share-card{padding:24px;text-align:center;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 12px 28px rgba(13,36,51,.06)}
+.share-card img{display:block;width:min(190px,100%);height:auto;aspect-ratio:1;margin:0 auto;image-rendering:pixelated}
+.share-card p{color:var(--muted);font-size:.9rem}
+.qr-downloads{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:16px}
+.qr-downloads a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 14px;background:var(--soft);border:1px solid var(--line);border-radius:7px;color:var(--deep);font-weight:750;font-size:.88rem}
+.coursework-disclosure{width:min(1120px,100%);margin:auto}
+.coursework-disclosure>summary{display:none}
+.coursework-open-label{display:none}
+.coursework-disclosure[open] .coursework-open-label{display:inline}
+.coursework-disclosure[open] .coursework-closed-label{display:none}
+@media(max-width:720px){
+ body{padding-bottom:calc(80px + env(safe-area-inset-bottom))}
+ .has-mobile-ui .header{grid-template-columns:minmax(0,1fr) auto 44px;gap:8px;padding:10px 16px}
+ .has-mobile-ui .header .brand{grid-column:1;grid-row:1;gap:8px;min-width:0;font-size:.85rem;white-space:nowrap;min-height:44px}
+ .has-mobile-ui .brand span{width:30px;height:30px;flex-shrink:0}
+ .has-mobile-ui .language-switcher{grid-column:2;grid-row:1;padding:2px;gap:2px}
+ .has-mobile-ui .language-switcher a{min-width:40px;min-height:38px;padding:3px 5px;font-size:.8rem}
+ .has-mobile-ui .mobile-menu-toggle{display:flex;grid-column:3;grid-row:1;align-items:center;justify-content:center;width:44px;height:44px;padding:10px;background:transparent;border:1px solid rgba(255,255,255,.22);border-radius:8px;color:white;cursor:pointer}
+ .mobile-menu-toggle svg{width:22px;height:22px}
+ .menu-close-icon{display:none}
+ .header[data-menu-open="true"] .menu-open-icon{display:none}
+ .header[data-menu-open="true"] .menu-close-icon{display:block}
+ .has-mobile-ui .header .nav{display:none;grid-column:1/-1;grid-row:2;width:100%;padding-top:9px;border-top:1px solid rgba(255,255,255,.14)}
+ .has-mobile-ui .header[data-menu-open="true"] .nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 10px}
+ .has-mobile-ui .header .nav a{display:flex;align-items:center;min-height:44px;padding:6px 10px;border-radius:6px;background:rgba(255,255,255,.05);font-size:.92rem}
+ .mobile-menu-toggle:focus-visible,.mobile-dock a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+ .hero{display:block;position:relative;min-height:auto;padding:26px 18px 30px}
+ .hero>.avatar{position:absolute;right:18px;top:26px;width:104px;height:104px;border-width:5px;box-shadow:0 12px 26px rgba(0,0,0,.2)}
+ .hero .eyebrow{max-width:calc(100% - 122px);font-size:.65rem;line-height:1.5;letter-spacing:.02em;margin:0 0 10px}
+ .hero h1{padding-right:116px;font-size:clamp(1.8rem,8vw,2.25rem);line-height:1.05;min-height:72px}
+ .hero p:not(.eyebrow){font-size:.92rem;line-height:1.8;margin-top:18px}
+ .hero .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:20px}
+ .hero .actions .btn:first-child{grid-column:1/-1}
+ .hero .btn{min-height:44px;padding:8px;font-size:.88rem}
+ .hero .stats{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:20px}
+ .hero .stats div{padding:11px 13px}
+ .hero .stats strong{font-size:1rem}
+ .hero .stats span{font-size:.73rem}
+ .section{padding:42px 18px}
+ .heading{gap:14px;margin-bottom:22px}
+ .heading h2{font-size:1.8rem;line-height:1.16}
+ .note{font-size:.9rem;line-height:1.75}
+ .grid{gap:13px}
+ .categories{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .category{padding:16px;min-height:160px}
+ .category:last-child{grid-column:1/-1;min-height:110px}
+ .category h3{font-size:1rem;line-height:1.4}
+ .category p{font-size:.78rem;line-height:1.7}
+ .skill{padding:19px}
+ .skill p,.timeline p{font-size:.91rem;line-height:1.8}
+ .timeline article{gap:10px;padding:18px}
+ .timeline h3{font-size:1.04rem;line-height:1.5;margin-top:0}
+ .timeline time{font-size:.8rem}
+ .timeline time small{display:inline;margin-left:9px}
+ .experience-link{min-height:44px;font-size:.82rem}
+ .experience-links{gap:8px 14px}
+ .mock{height:86px}
+ .mock:before{inset:12px}
+ .mock:after{width:130px;height:130px;top:-40px;right:-15px}
+ .mock .paper-card,.mock .chart,.mock .flow,.mock .research-path,.mock .data-layers{display:none}
+ .badge{left:18px;bottom:25px;font-size:.95rem}
+ .body,.assignment-card{padding:18px}
+ .body h3,.assignment-card h3{font-size:1.08rem;line-height:1.45}
+ .body>p:not(.kicker),.assignment-card>p:not(.kicker){font-size:.9rem;line-height:1.75}
+ .open-hint{min-height:38px;align-items:center;margin-top:8px;font-size:.83rem}
+ .coursework-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:52px;padding:14px 16px;margin:0 0 14px;border:1px solid var(--line);border-radius:8px;background:var(--soft);color:var(--deep);font-size:.9rem;font-weight:750;cursor:pointer;list-style:none}
+ .coursework-disclosure>summary::-webkit-details-marker{display:none}
+ .coursework-disclosure>summary:after{content:'+';font-size:1.4rem;line-height:1}
+ .coursework-disclosure[open]>summary:after{content:'−'}
+ .filters{gap:7px;margin-top:14px}
+ .filter{min-height:44px;padding:0 12px;font-size:.8rem}
+ .detail-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+ .detail-tab{min-height:46px;padding:9px 6px;text-align:center;font-size:.78rem;line-height:1.4}
+ .desktop-copy{display:none}
+ .mobile-copy{display:inline}
+ .detail-cover{min-height:165px;padding:20px}
+ .detail-cover small{font-size:.65rem}
+ .detail-cover h3,html[lang="en"] .detail-cover h3{font-size:1.55rem;margin:14px 0 18px;line-height:1.2}
+ .detail-mark{font-size:3rem}
+ .detail-body{padding:20px}
+ .detail-body h4{font-size:1.25rem;line-height:1.45}
+ .detail-body p{font-size:.91rem;line-height:1.85}
+ .detail-sections p{font-size:.87rem}
+ .detail-metrics strong{font-size:1.18rem}
+ .detail-metrics span{font-size:.67rem}
+ .detail-notice{padding:15px}
+ .contact-line a{min-height:44px;max-width:100%;overflow-wrap:anywhere;font-size:.83rem}
+ .share-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .share-card{padding:12px}
+ .share-card h3{font-size:.95rem}
+ .share-card p{font-size:.76rem}
+ .qr-downloads{gap:7px}
+ .qr-downloads a{padding:0 8px;font-size:.75rem;min-height:44px}
+ .footer{padding:36px 18px}
+ .links a{display:flex;align-items:center;min-height:44px}
+ .mobile-dock{position:fixed;inset:auto 0 0;z-index:30;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:7px 8px calc(7px + env(safe-area-inset-bottom));background:rgba(13,36,51,.97);border-top:1px solid rgba(255,255,255,.16);backdrop-filter:blur(16px);box-shadow:0 -5px 20px rgba(13,36,51,.12)}
+ .mobile-dock a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:46px;border-radius:7px;color:rgba(255,255,255,.72);font-size:.68rem;font-weight:650;line-height:1.25}
+ .mobile-dock svg{width:20px;height:20px}
+ .mobile-dock a[aria-current="location"]{color:var(--gold);background:rgba(196,161,91,.1)}
+}
 </style>
 <link href="https://zijingy942-glitch.github.io/" hreflang="zh-CN" rel="alternate"/><link href="https://zijingy942-glitch.github.io/en.html" hreflang="en" rel="alternate"/><link href="https://zijingy942-glitch.github.io/" hreflang="x-default" rel="alternate"/><link href="https://zijingy942-glitch.github.io/" rel="canonical"/></head>
 <body>
-<header class="header"><a class="brand" href="#top"><span>ZY</span><strong>Zane Yang</strong></a><nav class="nav"><a href="#about">简介</a><a href="#experience">经历</a><a href="#work">作品</a><a href="#assignments">作业作品</a><a href="#work-detail">详情</a><a href="#contact">联系</a></nav><nav aria-label="语言选择" class="language-switcher"><a aria-current="page" data-lang="zh" data-language-link="./" href="./" hreflang="zh-CN" lang="zh-CN">中文</a><a data-lang="en" data-language-link="en.html" href="en.html" hreflang="en" lang="en">EN</a></nav></header>
+<header class="header"><a class="brand" href="#top"><span>ZY</span><strong>Zane Yang</strong></a><button aria-controls="primary-navigation" aria-expanded="false" aria-label="展开导航" class="mobile-menu-toggle" data-close-label="收起导航" data-mobile-menu-toggle="" data-open-label="展开导航" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><g class="menu-open-icon"><path d="M4 6h16M4 12h16M4 18h16"></path></g><g class="menu-close-icon"><path d="m6 6 12 12M18 6 6 18"></path></g></svg></button><nav aria-label="主导航" class="nav" id="primary-navigation"><a href="#about">简介</a><a href="#experience">经历</a><a href="#work">作品</a><a href="#assignments">作业作品</a><a href="#work-detail">详情</a><a href="#contact">联系</a><a href="#share">网页二维码</a></nav><nav aria-label="语言选择" class="language-switcher"><a aria-current="page" data-lang="zh" data-language-link="./" href="./" hreflang="zh-CN" lang="zh-CN">中文</a><a data-lang="en" data-language-link="en.html" href="en.html" hreflang="en" lang="en">EN</a></nav></header>
 <main id="top">
-<section class="hero"><div><p class="eyebrow">Finance · Investment Research · Data Analytics</p><h1>杨子敬<br/>Zane Yang</h1><p>厦门大学金融学本科，关注公司基本面、行业研究与数据建模。曾在华安证券研究所参与半导体及有色公司研究，现参与加密 VC 全周期文献研究与链上数据库建设，将文献、经营机制和数据连接到具体研究问题。</p><div class="actions"><a class="btn primary" href="#work">查看作品</a><a class="btn secondary" href="#assignments">完整作业集</a><a class="btn secondary" href="mailto:3296294528@qq.com">联系我</a></div><div class="stats"><div><strong>3.75 / 4.0</strong><span>Finance CGPA</span></div><div><strong>Dean's List</strong><span>连续入选</span></div><div><strong>18</strong><span>作业作品</span></div><div><strong>6,910</strong><span>ML 样本</span></div></div></div><img alt="杨子敬 Zane Yang 的职业头像" class="avatar" decoding="async" fetchpriority="high" height="1411" src="assets/profile.png" width="1114"/></section>
+<section class="hero"><div><p class="eyebrow"><span class="desktop-copy">Finance · Investment Research · Data Analytics</span><span class="mobile-copy">金融研究 · 数据分析</span></p><h1>杨子敬<br/>Zane Yang</h1><p>厦门大学金融学本科，关注公司基本面、行业研究与数据建模。曾在华安证券研究所参与半导体及有色公司研究，现参与加密 VC 全周期文献研究与链上数据库建设，将文献、经营机制和数据连接到具体研究问题。</p><div class="actions"><a class="btn primary" href="#work">查看作品</a><a class="btn secondary" href="#assignments">完整作业集</a><a class="btn secondary" href="mailto:3296294528@qq.com">联系我</a></div><div class="stats"><div><strong>3.75 / 4.0</strong><span>Finance CGPA</span></div><div><strong>Dean's List</strong><span>连续入选</span></div><div><strong>18</strong><span>作业作品</span></div><div><strong>6,910</strong><span>ML 样本</span></div></div></div><img alt="杨子敬 Zane Yang 的职业头像" class="avatar" decoding="async" fetchpriority="high" height="1411" src="assets/profile.png" width="1114"/></section>
 <section class="section band"><div class="heading"><div><p class="eyebrow">Work Categories</p><h2>作品分类</h2></div></div><div class="grid categories"><a class="category" href="#work"><b>01</b><h3>研究项目</h3><p>RA 项目、行业框架、公司研究、投融资材料与研究报告。</p></a><a class="category" href="#work"><b>02</b><h3>商赛案例</h3><p>商业精英挑战赛、MCM/ICM、KCC、Brandstorm 与行研竞赛。</p></a><a class="category" href="#work"><b>03</b><h3>数据建模</h3><p>系统动力学、线性规划、LightGBM、Python 可视化与预测模型。</p></a><a class="category" href="#assignments"><b>04</b><h3>课程项目</h3><p>投资学、商业银行、公司金融与宏观分析成果。</p></a><a class="category" href="#assignments"><b>05</b><h3>完整作业集</h3><p>18 件 Moodle 作业作品，覆盖金融、经济、管理、数据 AI、统计与机器学习。</p></a></div></section>
 <section class="section" id="about"><div class="heading"><div><p class="eyebrow">Profile</p><h2>把金融问题拆成数据、行业和决策</h2></div></div><div class="grid intro"><article class="skill"><h3>研究定位</h3><p>以金融学训练为底座，覆盖行业研究、公司基本面、财务报表、投融资案例、市场规模测算、产业链和竞品分析。</p></article><article class="skill"><h3>数据方法</h3><p>熟悉 Excel、Python、EViews 与基础 SQL，能完成数据清洗、统计分析、计量模型、图表可视化和研究报告输出。</p></article><article class="skill"><h3>当前方向</h3><p>研究经历覆盖券商研究所的 DRAM 行业与公司分析，以及加密 VC 的文献框架、投后链上行为和研究数据建设。</p></article></div></section>
 <section class="section band" id="experience"><div class="heading"><div><p class="eyebrow">Experience</p><h2>经历主线</h2></div></div><div class="grid timeline"><article>
@@ -88,7 +193,7 @@ html[lang="en"] .detail-cover h3{font-size:clamp(1.8rem,3vw,2.8rem)}
 <div aria-hidden="true" class="mock mock-data"><div class="data-layers"><span><b>VC</b>机构特征</span><span><b>PROJECT</b>项目与解锁</span><span><b>TRANSFER</b>链上行为</span></div><span class="badge">Crypto VC · On-chain Data</span></div>
 <div class="body"><p class="kicker">Research Project 02 · Data &amp; Tools</p><h3>加密VC链上行为与研究数据库</h3><p>参与 VC、项目、交易三层变量设计、链上转账与 Token 解锁资料整理，并参与研究工具模块迭代。</p><div class="tags"><span>184 个字段行</span><span>多源核验</span><span>工具模块</span></div><span class="open-hint">查看数据工作与研究设计 ↗</span></div>
 </article><article class="card clickable" data-detail="iflytek" tabindex="0"><div class="mock"><div class="chart"><i></i><i></i><i></i><i></i><i></i></div><span class="badge">Business Case</span></div><div class="body"><p class="kicker">Business Case · National Finalist</p><h3>科大讯飞商业案例与财务预测</h3><p>商业计划书、财务预测与战略分析。</p><div class="tags"><span>Financial Forecast</span><span>SWOT</span><span>Strategy</span></div><span class="open-hint">点击查看封面摘要</span></div></article><article class="card clickable" data-detail="mcm" tabindex="0"><div class="mock"><div class="flow"><i></i><i></i><i></i></div><span class="badge">MCM Modeling</span></div><div class="body"><p class="kicker">MCM / ICM · Honorable Mention</p><h3>Gen-AI 与就业影响建模</h3><p>系统动力学、线性规划与就业影响建模。</p><div class="tags"><span>System Dynamics</span><span>Linear Programming</span><span>Python</span></div><span class="open-hint">点击查看封面摘要</span></div></article><article class="card clickable" data-detail="kitchen" tabindex="0"><div class="mock"><div class="paper-card"><b></b><i></i><i></i><i></i><i></i></div><span class="badge">Industry Research</span></div><div class="body"><p class="kicker">Industry Research · Top 10</p><h3>智能厨房设备行业研究</h3><p>市场规模、产业链图谱与服务模式研究。</p><div class="tags"><span>Industry Map</span><span>Market Sizing</span><span>AI Agent</span></div><span class="open-hint">点击查看封面摘要</span></div></article></div></section>
-<section class="section band" id="assignments"><div class="heading"><div><p class="eyebrow">Assignment Portfolio</p><h2>完整作业作品集</h2></div><div><p class="note">按照能力类型整理目前提供的 18 件课程作业。点击卡片查看对应封面摘要。</p><div class="filters"><button class="filter active" data-filter="all">全部</button><button class="filter" data-filter="finance">金融</button><button class="filter" data-filter="economics">经济</button><button class="filter" data-filter="data">数据 AI</button><button class="filter" data-filter="management">管理</button><button class="filter" data-filter="banking">银行贸易</button><button class="filter" data-filter="stats">统计 ML</button></div></div></div><div class="grid assignments">
+<section class="section band" id="assignments"><div class="heading"><div><p class="eyebrow">Assignment Portfolio</p><h2>完整作业作品集</h2></div><div><p class="note">按照能力类型整理目前提供的 18 件课程作业。点击卡片查看对应封面摘要。</p><div class="filters"><button class="filter active" data-filter="all">全部</button><button class="filter" data-filter="finance">金融</button><button class="filter" data-filter="economics">经济</button><button class="filter" data-filter="data">数据 AI</button><button class="filter" data-filter="management">管理</button><button class="filter" data-filter="banking">银行贸易</button><button class="filter" data-filter="stats">统计 ML</button></div></div></div><details class="coursework-disclosure" data-coursework-disclosure="" open=""><summary><span class="coursework-closed-label">展开 18 件课程作业</span><span class="coursework-open-label">收起课程作业</span></summary><div class="grid assignments">
 <article class="card assignment-card clickable" data-detail="ml-report" data-tags="data stats" tabindex="0"><p class="kicker">Machine Learning with Python · Report</p><h3>游戏销量预测与投资决策支持系统</h3><p>LightGBM 销量预测与投资建议。</p><div class="tags"><span>LightGBM</span><span>R² 0.6231</span><span>MAE 0.2315m</span></div><span class="open-hint">点击查看封面摘要</span></article>
 <article class="card assignment-card clickable" data-detail="ml-notebook" data-tags="data stats" tabindex="0"><p class="kicker">Machine Learning with Python · Notebook</p><h3>游戏销量预测与投资分析 Notebook</h3><p>交互式 Python notebook 分析流程。</p><div class="tags"><span>Python</span><span>Notebook</span><span>Prediction</span></div><span class="open-hint">点击查看封面摘要</span></article>
 <article class="card assignment-card clickable" data-detail="ml-presentation" data-tags="data stats" tabindex="0"><p class="kicker">Machine Learning with Python · Presentation</p><h3>机器学习项目路演展示</h3><p>模型流程与商业解释展示。</p><div class="tags"><span>Presentation</span><span>Model Story</span></div><span class="open-hint">点击查看封面摘要</span></article>
@@ -107,16 +212,16 @@ html[lang="en"] .detail-cover h3{font-size:clamp(1.8rem,3vw,2.8rem)}
 <article class="card assignment-card clickable" data-detail="pom-week8" data-tags="management" tabindex="0"><p class="kicker">Principle of Management · Week 8</p><h3>人力资源管理与多元化</h3><p>HRM、多元化和员工支持。</p><div class="tags"><span>HRM</span><span>Diversity</span></div><span class="open-hint">点击查看封面摘要</span></article>
 <article class="card assignment-card clickable" data-detail="pom-week11" data-tags="management" tabindex="0"><p class="kicker">Principle of Management · Week 11</p><h3>员工激励与奖励</h3><p>员工激励、奖励和行为管理。</p><div class="tags"><span>Motivation</span><span>Rewards</span></div><span class="open-hint">点击查看封面摘要</span></article>
 <article class="card assignment-card clickable" data-detail="pom-week14" data-tags="management" tabindex="0"><p class="kicker">Principle of Management · Week 14</p><h3>管理控制与绩效反馈</h3><p>计划落地、控制系统和绩效反馈。</p><div class="tags"><span>Control</span><span>Feedback</span></div><span class="open-hint">点击查看封面摘要</span></article>
-</div><div class="grid metrics"><div><strong>18</strong><span>完整作业作品</span></div><div><strong>6</strong><span>能力分类</span></div><div><strong>6,910</strong><span>ML 项目样本量</span></div><div><strong>75</strong><span>商业银行报告页数</span></div></div></section>
+</div></details><div class="grid metrics"><div><strong>18</strong><span>完整作业作品</span></div><div><strong>6</strong><span>能力分类</span></div><div><strong>6,910</strong><span>ML 项目样本量</span></div><div><strong>75</strong><span>商业银行报告页数</span></div></div></section>
 <section class="section detail-section" id="work-detail"><div class="heading"><div><p class="eyebrow">Cover Detail</p><h2>项目与作品详情</h2></div><p class="note">查看实习与科研项目的工作概述、方法及个人贡献；完整研究材料请联系本人。</p></div><div aria-label="实习与科研项目选择" class="detail-nav">
-<button aria-controls="work-detail" class="detail-tab" data-open-detail="huaan" type="button">华安研究所实习</button>
-<button aria-controls="work-detail" class="detail-tab" data-open-detail="ra" type="button">科研 01 · 文献与框架</button>
-<button aria-controls="work-detail" class="detail-tab" data-open-detail="crypto-data" type="button">科研 02 · 链上数据库</button>
+<button aria-controls="work-detail" aria-label="华安研究所实习" class="detail-tab" data-open-detail="huaan" type="button"><span class="desktop-copy">华安研究所实习</span><span class="mobile-copy">研究实习</span></button>
+<button aria-controls="work-detail" aria-label="科研 01 · 文献与框架" class="detail-tab" data-open-detail="ra" type="button"><span class="desktop-copy">科研 01 · 文献与框架</span><span class="mobile-copy">文献框架</span></button>
+<button aria-controls="work-detail" aria-label="科研 02 · 链上数据库" class="detail-tab" data-open-detail="crypto-data" type="button"><span class="desktop-copy">科研 02 · 链上数据库</span><span class="mobile-copy">链上数据</span></button>
 </div>
 <div class="detail-shell"><div class="detail-cover"><div><small id="detail-kicker">Select a work</small><h3 id="detail-title" tabindex="-1">半导体存储与公司深度研究</h3></div><div class="detail-mark" id="detail-mark">ZY</div></div><div class="detail-body"><p class="detail-label" id="detail-type">Intro / Abstract</p><h4 id="detail-subtitle">作品封面内容</h4><p id="detail-abstract">请选择上方“代表作品”或“完整作业作品集”中的任意作品。这里会展示该作品的封面摘要，只包含 intro 或 abstract 层面的介绍。</p><div class="detail-metrics" hidden="" id="detail-metrics"></div><p class="detail-context" hidden="" id="detail-context"></p><div class="detail-sections" hidden="" id="detail-sections"></div><div class="tags" id="detail-tags"><span>Portfolio</span><span>Cover Only</span></div><div class="detail-notice"><strong>详情请联系 Zane Yang 本人</strong><span>完整报告、正文、代码、数据与附件不在公开页面展示。</span><div class="contact-line"><a href="mailto:3296294528@qq.com">3296294528@qq.com</a><a href="tel:+60142147782">+60 142147782</a></div></div></div></div></section>
 <section class="section" id="skills"><div class="heading"><div><p class="eyebrow">Capabilities</p><h2>技能与课程结构</h2></div></div><div class="grid skills"><article class="skill"><h3>研究与金融</h3><p>行业研究、公司基本面、财务报表、投融资案例、市场规模测算、产业链分析、竞品分析、商业计划书、研究报告。</p></article><article class="skill"><h3>数据与建模</h3><p>多源数据清洗、Python 数据处理与可视化、Excel 透视与函数、EViews 计量分析、基础 SQL、线性优化、系统动力模型。</p></article><article class="skill"><h3>表达与工具</h3><p>Word、PowerPoint、LaTeX、Cursor、英文资料阅读与研究整理。IELTS 6.0，GRE 备考中，CFA Level I 备考中。</p></article></div></section>
-</main><footer class="footer" id="contact"><div><p class="eyebrow">Contact</p><h2>联系 Zane Yang</h2><p>邮箱：<a href="mailto:3296294528@qq.com">3296294528@qq.com</a><br/>电话：<a href="tel:+60142147782">+60 142147782</a></p></div><div class="links"><a href="mailto:3296294528@qq.com">发送邮件</a><a href="tel:+60142147782">拨打电话</a><a href="https://github.com/zijingy942-glitch">GitHub Profile</a><a href="#assignments">查看完整作业集</a></div></footer>
-<script>
+<section aria-labelledby="share-title" class="section band" id="share"><div class="heading"><div><p class="eyebrow">Scan &amp; Share</p><h2 id="share-title">扫码访问与分享</h2></div><p class="note">扫码即可打开网页。可下载 PNG 或 SVG，用于简历、名片或日常分享。</p></div><div class="grid share-grid"><article class="share-card"><img alt="中文网页二维码" decoding="async" height="190" loading="lazy" src="assets/qr-zh.png" width="190"/><h3>中文版网页</h3><p><a href="https://zijingy942-glitch.github.io/">直接打开网页 ↗</a></p><div class="qr-downloads"><a download="zane-yang-website-zh.png" href="assets/qr-zh.png">下载 PNG</a><a download="zane-yang-website-zh.svg" href="assets/qr-zh.svg">下载 SVG</a></div></article><article class="share-card"><img alt="英文网页二维码" decoding="async" height="190" loading="lazy" src="assets/qr-en.png" width="190"/><h3>英文版网页</h3><p><a href="https://zijingy942-glitch.github.io/en.html">直接打开网页 ↗</a></p><div class="qr-downloads"><a download="zane-yang-website-en.png" href="assets/qr-en.png">下载 PNG</a><a download="zane-yang-website-en.svg" href="assets/qr-en.svg">下载 SVG</a></div></article></div></section></main><footer class="footer" id="contact"><div><p class="eyebrow">Contact</p><h2>联系 Zane Yang</h2><p>邮箱：<a href="mailto:3296294528@qq.com">3296294528@qq.com</a><br/>电话：<a href="tel:+60142147782">+60 142147782</a></p></div><div class="links"><a href="mailto:3296294528@qq.com">发送邮件</a><a href="tel:+60142147782">拨打电话</a><a href="https://github.com/zijingy942-glitch">GitHub Profile</a><a href="#assignments">查看完整作业集</a><a href="#share">下载网页二维码</a></div></footer>
+<nav aria-label="手机快捷导航" class="mobile-dock"><a href="#top"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"></path></svg><span>首页</span></a><a href="#experience"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="7"></rect><path d="M8 7V4h8v3M3 12h18M10 12v3h4v-3"></path></svg><span>经历</span></a><a href="#work"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="7" rx="1" width="7" x="3" y="3"></rect><rect height="7" rx="1" width="7" x="14" y="3"></rect><rect height="7" rx="1" width="7" x="3" y="14"></rect><rect height="7" rx="1" width="7" x="14" y="14"></rect></svg><span>作品</span></a><a href="#contact"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 6 9 7 9-7"></path></svg><span>联系</span></a></nav><script>
 const detailData={
   "huaan": {
     "kicker": "Huaan Securities · 2026.07—2026.10",
@@ -502,6 +607,7 @@ const detailSections=document.querySelector('#detail-sections');
 function openDetail(id,{scroll=true,updateUrl=true}={}){
   const item=Object.hasOwn(detailData,id)?detailData[id]:null;
   if(!item)return;
+  if(document.documentElement.classList.contains('has-mobile-ui'))setMobileMenu(false);
   detailKicker.textContent=item.kicker;
   detailTitle.textContent=item.title;
   detailType.textContent=item.type;
@@ -542,6 +648,7 @@ document.querySelectorAll('[data-open-detail]').forEach(button=>button.addEventL
 function restoreDetail(){const requested=new URL(location.href).searchParams.get('project');openDetail(Object.hasOwn(detailData,requested)?requested:'huaan',{scroll:false,updateUrl:false});}
 
 function syncLanguageLinks(){
+  syncMobileDock();
   document.querySelectorAll('[data-language-link]').forEach(link=>{
     const target=new URL(link.dataset.languageLink,location.href);
     target.search=location.search;target.hash=location.hash;link.href=target.href;
@@ -556,6 +663,31 @@ new ResizeObserver(updateHeaderHeight).observe(siteHeader);
 
 restoreDetail();
 window.addEventListener('popstate',()=>{restoreDetail();syncLanguageLinks();});
+
+function syncMobileDock(){
+  const hash=location.hash;
+  const active=hash==='#experience'?'#experience':hash==='#contact'||hash==='#share'?'#contact':['#work','#work-detail','#assignments'].includes(hash)?'#work':'#top';
+  document.querySelectorAll('.mobile-dock a').forEach(link=>{if(link.getAttribute('href')===active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+}
+function setMobileMenu(open,focus=false){
+  const button=document.querySelector('[data-mobile-menu-toggle]');
+  document.querySelector('.header').dataset.menuOpen=String(open);
+  button.setAttribute('aria-expanded',String(open));
+  button.setAttribute('aria-label',open?button.dataset.closeLabel:button.dataset.openLabel);
+  updateHeaderHeight();
+  if(focus)button.focus({preventScroll:true});
+}
+document.documentElement.classList.add('has-mobile-ui');
+const mobileMenuButton=document.querySelector('[data-mobile-menu-toggle]');
+mobileMenuButton.addEventListener('click',()=>setMobileMenu(mobileMenuButton.getAttribute('aria-expanded')!=='true'));
+document.querySelectorAll('#primary-navigation a,.mobile-dock a').forEach(link=>link.addEventListener('click',()=>setMobileMenu(false)));
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&mobileMenuButton.getAttribute('aria-expanded')==='true')setMobileMenu(false,true);});
+const mobileViewport=matchMedia('(max-width:720px)');
+const courseworkDisclosure=document.querySelector('[data-coursework-disclosure]');
+function applyMobileLayout(){setMobileMenu(false);courseworkDisclosure.open=!mobileViewport.matches;syncMobileDock();}
+mobileViewport.addEventListener('change',applyMobileLayout);
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{courseworkDisclosure.open=true;}));
+applyMobileLayout();
 </script>
 </body>
 </html>

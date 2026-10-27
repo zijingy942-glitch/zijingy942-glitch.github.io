@@ -27,3 +27,12 @@
 ## 发布方式
 
 GitHub Pages 使用本仓库 `main` 分支的根目录。更新网站代码并提交到 `main` 后，GitHub 自动构建并发布到上方固定网址。
+
+## 手机访问与二维码
+
+同一网址会自动适配手机：紧凑首屏、折叠菜单、底部快捷栏和可展开的课程作品集，中英文均可使用。
+
+- [中文网页二维码 PNG](https://zijingy942-glitch.github.io/assets/qr-zh.png) · [SVG](https://zijingy942-glitch.github.io/assets/qr-zh.svg)
+- [English website QR PNG](https://zijingy942-glitch.github.io/assets/qr-en.png) · [SVG](https://zijingy942-glitch.github.io/assets/qr-en.svg)
+
+二维码直接编码公开网页地址，不依赖跳转服务。PNG 与 SVG 使用相同的二维码数据。
